@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Universal Regression Analyzer</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #f5f7fa;
+            color: #222;
+        }
+
+        header {
+            background: #222;
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 42px;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+        }
+
+        section {
+            background: white;
+            margin-bottom: 25px;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        h2 {
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+        }
+
+        .model {
+            padding: 15px;
+            margin: 10px 0;
+            background: #f0f2f5;
+            border-radius: 8px;
+        }
+
+        a {
+            color: #0066cc;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Universal Automatic Regression Analyzer</h1>
+    <p>자동 회귀 분석 및 머신러닝 모델 비교 시스템</p>
+</header>
+
+<div class="container">
+
+<section>
+    <h2>프로젝트 소개</h2>
+
+    <p>
+        다양한 형태의 표 데이터를 입력하면 데이터를 자동으로 전처리하고,
+        여러 회귀 모델을 학습하여 성능을 비교하는 분석 프로그램입니다.
+    </p>
+</section>
+
+<section>
+    <h2>프로젝트 목적</h2>
+
+    <p>
+        사용자가 복잡한 머신러닝 코드를 직접 수정하지 않아도
+        CSV, Excel 등의 데이터를 이용하여 여러 회귀 모델을
+        자동으로 비교할 수 있도록 하는 것을 목표로 합니다.
+    </p>
+</section>
+
+<section>
+    <h2>사용한 모델</h2>
+
+    <div class="model">
+        <h3>1. Linear Regression</h3>
+        <p>입력 변수와 목표 변수 사이의 선형적인 관계를 분석합니다.</p>
+    </div>
+
+    <div class="model">
+        <h3>2. Polynomial Regression</h3>
+        <p>2차 다항식을 이용하여 비선형적인 관계를 표현합니다.</p>
+    </div>
+
+    <div class="model">
+        <h3>3. Random Forest Regression</h3>
+        <p>여러 개의 결정 트리를 결합하여 복잡한 비선형 관계를 분석합니다.</p>
+    </div>
+
+    <div class="model">
+        <h3>4. Gradient Boosting Regression</h3>
+        <p>여러 약한 학습기를 순차적으로 학습하여 예측 성능을 높입니다.</p>
+    </div>
+</section>
+
+<section>
+    <h2>데이터 처리 과정</h2>
+
+    <ol>
+        <li>CSV, XLSX, JSON 파일 불러오기</li>
+        <li>데이터 기본 정보 확인</li>
+        <li>ID 및 불필요한 변수 탐지</li>
+        <li>Target 변수 자동 탐색</li>
+        <li>결측값 처리</li>
+        <li>범주형 변수 One-Hot Encoding</li>
+        <li>수치형 변수 Scaling</li>
+        <li>Train / Test 데이터 분리</li>
+        <li>여러 회귀 모델 학습</li>
+        <li>모델 성능 비교</li>
+    </ol>
+</section>
+
+<section>
+    <h2>평가 지표</h2>
+
+    <ul>
+        <li>R² Score</li>
+        <li>MAE</li>
+        <li>RMSE</li>
+    </ul>
+</section>
+
+<section>
+    <h2>실행 환경</h2>
+
+    <p>
+        Python / Google Colab / scikit-learn / pandas / NumPy
+    </p>
+</section>
+
+<section>
+    <h2>Source Code</h2>
+
+    <p>
+        <a href="https://colab.research.google.com/" target="_blank">
+            Google Colab
+        </a>
+    </p>
+
+    <p>
+        GitHub Repository에서 전체 소스 코드를 확인할 수 있습니다.
+    </p>
+</section>
+
+</div>
+
+<footer>
+    Universal Automatic Regression Analyzer
+</footer>
+
+</body>
+</html>
